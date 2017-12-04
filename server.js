@@ -34,7 +34,7 @@ console.log(process.env.NODE_ENV);
 // -------------------------------------------------
 //MongoDB Configuration configuration (Change this URL to your own DB)
 
-var dbURI = 'mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab';
+var dbURI = process.env.MONGOLAB_URI'mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab';
 mongoose.connect(dbURI, { useMongoClient: true });
 
 // // MongoDB Config Set-up

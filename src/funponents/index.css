@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+#userDiv {
+	background-color: lightyellow;
+	border-bottom-color: orange;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+}
+#userTag {
+	display: inline;
+	clear: left;
+}
+#userList {
+	padding-top: 7px;
+	border-top-color: orange;
+	border-top-style: solid;
+	border-top-width: 4px;
+}
+.userItems {
+	display: inline;
+	clear: left;
+}
+
+.panel-body {
+	text-align: left;
+	padding-bottom: 10px;
+}
+#submitter {
+	background-color: lightyellow;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+#logger {
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	background-color: plum;
+	float: right;
+	padding-left: 4px;
+	padding-top: 1px;
+	display: inline;
+}
+
+#resultWell {
+	margin-top: 15px;
+	text-align: left;
+	margin-left: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+#search {
+	margin-top: 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	background-color: white;
+}
+
+/*#sidebar {
+	margin-top: 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	margin-left: 2%;
+	margin-right: 0px;
+
+}*/
+
+#formArea {
+	margin-left: 0px;
+}
+
+#form {
+	margin-top: 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	margin-right: 0px;
+	background-color: white;
+}
+
+#contains {
+	display: inline;
+	float: left;
+}
+
+#results {
+	margin: -134px 0 0 14px;
+	border-color: grey;
+	border-style: solid;
+	border-width: 1px;
+	background-color: white;
+}
+
+h3 {
+	color: plum;
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+#resultDiv {
+	border-color: grey;
+	border-style: solid;
+	border-width: 4px;
+	background-color: white;
+}
+
+#average {
+	margin: 14px 0 0 0px;
+}
+
+#saved {
+	background-color: white;
+
+	font-weight: bold;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	color: lightgreen;
+	font-size: 30px;
+	padding-top: 0;
+	text-align: center;
+}
+#savedWell {
+	margin-left: 0px;
+}
+
+.App-header {
+	height: 180px;
+	border-bottom: solid lightyellow;
+	border-bottom-width: 14px;
+	text-align: left;
+	padding-bottom: 8px;
+}

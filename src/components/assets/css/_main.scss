@@ -1,0 +1,152 @@
+body {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    font: $fontBody;
+    background-color: rgb(238,238,238);
+}
+
+.headWrapper {
+    padding: 10px 20px 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.headWrapperMain {
+    @extend .headWrapper;
+    justify-content: flex-end;
+}
+
+.headWrapperDashBrd {
+    @extend .headWrapper;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.searchWrapper {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.bgImage {
+    width: 750px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: -1;
+    top: 60px;
+    left:50%;
+    transform: translatex(-50%);
+}
+
+.logo {
+    text-align: center;
+    font: $fontLogo;
+    margin-bottom: 25px;
+}
+
+.searchBar {
+    display: flex;
+    height: 45px;
+    border: 1px solid $secondaryColor;
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
+/*  universal input field styles on all forms */
+
+input {
+    @extend button;
+    width: 100%;
+    padding-left: 20px; 
+    color: $primaryColor !important;
+
+    &::placeholder {
+        font: $formFont;
+        font-style: italic;
+        color: $tertiaryColor;
+    }
+
+    &:placeholder-shown {
+        border: 2px solid $secondaryColor;
+    }
+}
+
+/*. Unversal button style for all pages and forms*/
+
+button {
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-right: 10px;
+    font: $formFont;
+    line-height: 1.7;
+    color: #fff;
+    display: block;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondaryColor;
+    }
+}
+
+.navLabel button {
+    font: $formFont;
+    color: $primaryColor;
+    height: 40px;
+
+    &:hover {
+        color: $tertiaryColor;
+    }
+}
+
+.navLabel {
+
+    li { padding-top: 7px; }
+
+    a {
+        font: $formFont;
+        color: $primaryColor;
+        height: 40px;
+
+        &:hover {
+            color: $tertiaryColor;
+        }
+    }
+}
+
+.display {
+    display: flex;
+}
+
+.btnSearch {
+    float: right;
+    width: 50px;
+}
+
+.embed-submit-field {
+  position: relative;
+
+  button {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    
+    &:hover {
+      background-color: #37C88D;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

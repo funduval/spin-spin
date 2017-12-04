@@ -1,0 +1,102 @@
+/*-- Responsive breakpoints --*/
+@media screen and (min-width: 1001px) {
+    .modalContent {
+        padding-bottom: 50px;
+    }
+
+    .bgImage {
+        width: 915px;
+    }
+
+    .logo {
+        margin-bottom: 75px;
+        font-size: 15em;
+    }
+}
+
+
+@media screen and (min-width: 725px) and (max-width: 1000px) {
+    .modalContent {
+        width: 67%;
+        padding-bottom: 40px;
+    }
+
+    .searchWrapper {
+        margin-top: 120px;
+        width: 615px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 724px) {
+    .modalContent {
+        width: 70%;
+        padding-bottom: 40px;
+    }
+
+    .searchWrapper {
+        margin-top: 120px;
+        width: 615px;
+    }
+
+    .welcome h1 {
+        font-size: 3.45em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .logo {
+    font-size: 7.7em;
+    }
+
+    .headWrapper {
+        padding: 6px 10px;
+    }
+
+    .bgImage {
+        width: 500px;
+    }
+
+    .searchWrapper {
+        margin-top: 90px;
+        width: 90%;
+    }
+
+    .searchBar {
+        height: 45px;
+    }
+
+    .welcome h1 {
+        font-size: 2.9em;
+        margin-bottom: 0;
+    }
+
+
+
+/* -- material-ui button style for type -- */
+    Button.div.span {
+        padding: 0;
+    }
+/* -------------------------------------- */
+
+    .modalContent {
+        width: 90%;
+        padding-top: 30px;
+    }
+
+    .titleText {
+        font-size: 1.7em;
+    }
+
+    .boxStyle {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+/*@media screen and (max-width: 460px) {
+    .modalContent {
+        width: 90%;
+    }
+}*/
