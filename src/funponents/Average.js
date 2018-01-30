@@ -11,13 +11,13 @@ const Average = ({ results, handleFormSubmit, showResults }) => (
 
             return (
                 <div key="20" className="panel">
-                    <h2 style={{ color: '#fd746a', padding: '5px' }}>Average Daily: </h2>
+                    <h2 style={{ color: '#fd746a', padding: '5px' }}>Pick an Item: </h2>
                     <div
                         className="panel-body"
                         data-value={nf_sugars}
                         style={{ display: showResults ? 'none' : 'block' }}
                     >
-                        {/*Justa buncha Math. Not tied to any of these calculations, just figuring out how to pass meaningful values along. There will eventtually be numbersfrom the db, the backend. Right now, to fake dynamic numbers, I am grabbing this from the front end--the API result at a predetermined index: result[9]*/}
+                        {/*Justa buncha Math. Not tied to any of these calculations, just figuring out how to pass meaningful values along. There will eventually be numbersfrom the db, the backend. Right now, to fake dynamic numbers, I am grabbing this from the front end--the API result at a predetermined index: result[9]*/}
                         <h5>{nf_sugars * 35 / 7} Sugar grams consumed per day </h5>
                         <h5>{Math.floor(nf_sugars * 35 / 7 - 25)} Grams more than the daily allowance </h5>
                         <h5>Total of {(nf_sugars * 35 / 7 - 25) * 365 * 4} pure sugar calories per year,</h5>

@@ -11,8 +11,6 @@ var Food = require('./src/models/Food');
 // Create Instance of Express
 var app = express();
 
-// Sets an initial port. We'll use this later in our listener
-// var PORT = process.env.PORT || 27017;
 var PORT = process.env.PORT || 3001;
 
 // Run Morgan for Logging
@@ -29,22 +27,12 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('public'));
 }
 
-console.log(process.env.NODE_ENV);
-
-// -------------------------------------------------
-//MongoDB Configuration configuration (Change this URL to your own DB)
-
-var dbURI = process.env.MONGOLAB_URI'mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab';
-mongoose.connect(dbURI, { useMongoClient: true });
-
 // // MongoDB Config Set-up
 // if (process.env.NODE_ENV == 'production') {
-// 	mongoose.connect('mongodb://leejane07:test123@ds149431.mlab.com:49431/heroku_jd57ng4d');
+// 	mongoose.connect('mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
 // } else {
-// 	mongoose.connect('mongodb://localhost/test123');
+mongoose.connect('mongodb://localhost/foods', { useMongoClient: true });
 // }
-//mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab
-//var url = process.env.MONGOLAB_URI
 
 var db = mongoose.connection;
 

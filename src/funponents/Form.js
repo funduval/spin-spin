@@ -6,7 +6,8 @@ const Form = props => ({
       <div>
         <form
           style={{
-            marginBottom: '30px'
+            marginBottom: '30px',
+            marginLeft: '-70px'
           }}
         >
           <input
@@ -16,6 +17,7 @@ const Form = props => ({
             type="text"
             style={{
               backgroundColor: '#F5F5F5',
+
               padding: '13px 10px',
               borderWidth: '1px',
               borderRadius: '3px 0 0 3px'

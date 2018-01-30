@@ -10,6 +10,7 @@ import API from './API.js';
 import Routes from '../components/routes';
 import DboardHead from '../components/Children/DboardHead';
 import { Modal } from 'react-bootstrap';
+import orange from '../components/assets/images/orange.png';
 
 class Main extends Component {
   state = {
@@ -107,7 +108,14 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="container" style={{ margin: 'auto', textAlign: 'center' }}>
+      <div
+        className="container"
+        style={{
+          textAlign: 'center',
+          backgroundImage: 'url(' + orange + ')',
+          height: this.state.showResults ? '0px' : '700px'
+        }}
+      >
         <div className="row">
           <div className="col-sm-12">
             <DboardHead />

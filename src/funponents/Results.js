@@ -24,7 +24,7 @@ const Results = ({ results, handleFormSubmit, showResults, handleLog, user }) =>
         let logged = true;
 
         API.postSaved(user, item_name, brand_name, nf_sugars, date, logged);
-        alert('logged item ' + item_name + ' ' + brand_name + ' ' + nf_sugars + ' grams on ' + date);
+        console.log('logged item ' + item_name + ' ' + brand_name + ' ' + nf_sugars + ' grams on ' + date);
         let showResults = false;
       };
 

@@ -17,15 +17,14 @@ const API = {
 	},
 	postSaved: function(user, item_name, brand_name, nf_sugars, date, logged) {
 		console.log('Posting');
-		var newFood = { user: user, item: item_name, brand: brand_name, sugar: nf_sugars, date: date, logged: true };
+		var newFood = { item: item_name, brand: brand_name, sugar: nf_sugars, date: date, user: user, logged: true };
 		console.log(newFood);
 
 		return axios
 			.post('/api/saved', newFood)
 			.then(function(response) {
 				console.log('axios results food', response.data);
-				alert('hitting post route with ' + response.data);
-				return response.data;
+				console.log('hitting post route with ' + response.data);
 			})
 			.catch(function(error) {
 				console.log(error);

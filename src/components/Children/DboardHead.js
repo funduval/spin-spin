@@ -25,28 +25,27 @@ export default class DboardHead extends Component {
   render() {
     console.log('header prop ', this.props);
     return (
-      <div className="headWrapperDashBrd">
-        <ListItem
+      <div style={{ display: 'inline', float: 'left' }}>
+        {/*   <ListItem
           disabled={true}
           leftAvatar={
-            <Avatar size={35} style={header.avatar}>
-              R
-            </Avatar>
-          }
-        >
-          Image Avatar with username
-        </ListItem>
-        <div className="dashLogo">
-          <h1 style={{ marginLeft: '-70px' }}>Sugr</h1>
-        </div>
+              <Avatar size={40} style={header.avatar}>
+              SUGR
+            </Avatar> />
+          */}
 
+        <div className="dashLogo">
+          <h1 style={{ fontSize: '90px', textAlign: 'left' }}>Sugr</h1>
+        </div>
+        {/*
         <div className="row">
           <ul className="navLabel">
-            <li style={{ paddingRight: '20px' }}>
+            <li style={{ display: 'inline', float: 'leftt' }}>
               <Link to="/">Log Out</Link>
             </li>
           </ul>
         </div>
+      */}
       </div>
     );
   }
