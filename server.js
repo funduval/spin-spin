@@ -28,11 +28,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // MongoDB Config Set-up
-if (process.env.NODE_ENV == 'production') {
-	mongoose.connect('mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
-} else {
-	mongoose.connect('mongodb://localhost/foods', { useMongoClient: true });
-}
+
+mongoose.connect('mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
 
 var db = mongoose.connection;
 
@@ -115,4 +112,3 @@ app.listen(PORT, function() {
 // 		// ...
 // 	}
 // });
-
