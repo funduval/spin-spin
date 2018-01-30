@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // MongoDB Config Set-up
 
-mongoose.connect('mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
+mongoose.connect('mongodb://Funda:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
 
 var db = mongoose.connection;
 
