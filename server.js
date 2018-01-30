@@ -27,12 +27,12 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('public'));
 }
 
-// // MongoDB Config Set-up
-// if (process.env.NODE_ENV == 'production') {
-// 	mongoose.connect('mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
-// } else {
-mongoose.connect('mongodb://localhost/foods', { useMongoClient: true });
-// }
+// MongoDB Config Set-up
+if (process.env.NODE_ENV == 'production') {
+	mongoose.connect('mongodb://funduval:Msjane110@ds129796.mlab.com:29796/sugrlab', { useMongoClient: true });
+} else {
+	mongoose.connect('mongodb://localhost/foods', { useMongoClient: true });
+}
 
 var db = mongoose.connection;
 
@@ -116,7 +116,3 @@ app.listen(PORT, function() {
 // 	}
 // });
 
-// // Listener
-// app.listen(PORT, function() {
-// 	console.log('App listening on PORT: ' + PORT);
-// });
